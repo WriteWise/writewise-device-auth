@@ -87,6 +87,7 @@
               "owner": "Writewise",
               "name": "writewise-device-auth"
             },
+            "authToken": "${{ secrets.GITHUB_TOKEN }}",
             "draft": true
           }
         }
