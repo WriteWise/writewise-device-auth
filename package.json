@@ -44,7 +44,10 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "writewise-device-auth"
+            "name": "writewise-device-auth",
+            "authors": "Writewise",
+            "iconUrl": "./favicon.ico",
+            "exe": "writewise-device-auth.exe"
           }
         },
         {
@@ -56,6 +59,11 @@
         {
           "name": "@electron-forge/maker-deb",
           "config": {
+            "options": {
+              "bin": "writewise-device-auth",
+              "maintainer": "Writewise",
+              "icon": "./favicon.png"
+            },
             "mimeType": [
               "x-scheme-handler/writewise-device-auth"
             ]
@@ -63,7 +71,12 @@
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "options": {
+              "bin": "writewise-device-auth",
+              "icon": "./favicon.png"
+            }
+          }
         }
       ],
       "publishers": [
