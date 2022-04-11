@@ -46,7 +46,7 @@
           "config": {
             "name": "writewise-device-auth",
             "authors": "Writewise",
-            "iconUrl": "./favicon.ico",
+            "iconUrl": "file:///C:/Users/......./favicon.ico",
             "exe": "writewise-device-auth.exe"
           }
         },
