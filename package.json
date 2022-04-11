@@ -10,7 +10,10 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
-  "author": "",
+  "author": {
+    "name": "Writewise",
+    "email": "contact@writewise.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.63",
@@ -41,7 +44,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "writewise_device_auth"
+            "name": "writewise-device-auth"
           }
         },
         {
