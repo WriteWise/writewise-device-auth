@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain, shell, dialog } = require('electron');
 const { machineId, machineIdSync } = require('node-machine-id');
+const { moveToApplications } = require('electron-lets-move');
 const path = require('path')
 
 let mainWindow;
@@ -61,6 +62,14 @@ if (!gotTheLock) {
     })
 }
 
+app.on('ready', function () {
+    moveToApplications(function (err, moved) {
+        if (err) {
+        }
+        if (!moved) {
+        }
+    });
+});
 
 const createWindow = async () => {
     let win = new BrowserWindow({
